@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+}
+
+html, body {
+  background-color: #DCDCDC;
+  font-family: Archivo;
+  height: 100%;
+}
+
+
+/*######################################################################################################## */
+/* CSS POUR MON EN-TÊTE ET MA BARRE DE NAVIGATION DU HAUT - ACCEUIL */
+div.barre-mauve {
+  background-color:  #420577;
+  height: 100px;
+  text-align: center;
+  font-family: Archivo;
+  text-transform: uppercase;
+  color: white;  
+}
+
+/* CENTRER MON LOGO DANS MON EN-TÊTE MAUVE */
+div.barre-mauve img{
+  max-height : 100%;
+}
+/* ######################################### */
+
+.navbar-nav {
+  float:none;
+  margin:0 auto;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav li {
+  display: inline-block;
+  float:none;  
+}
+
+nav.navbargray {
+  font-family: Archivo;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;  
+  background-color: #707070;  
+  height: 50px;    
+}
+
+
+div.container a {  
+  text-decoration: none;
+  font: 15px Archivo;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  color: white;
+}
+
+/* COULEUR POUR LE LIEN ACTIF */
+li a.lienactif{
+  font-weight: 500; 
+  font-weight: 600;   
+}
+
+
+a:hover:before, a:hover:after{
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+  color: #420577;
+}
+
+div.borderXwidth a:before, div.borderXwidth a:after{
+  position: absolute;
+  opacity: 0;
+  width: 0%;
+  height: 2px;
+  content: '';
+  background: #FFF;
+  transition: all 0.3s;
+}
+
+div.borderXwidth a:before{
+  left: 0px;
+  top: 0px;
+}
+
+div.borderXwidth a:after{
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderXwidth a:hover:before, div.borderXwidth a:hover:after{
+  opacity: 1;
+   width: 100%;
+}
+/*######################################################################################################## */
+
+
+
+
+/*######################################################################################################## */
+/* ################################## FOOTER - GRIS ##################################*/
+div.logostephanie-hedear a img {
+ height: 80px;
+}
+
+nav.navbarfooter {
+  font-family: Archivo;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;  
+  background-color: #707070;  
+  height: 32px;      
+}
+
+.navfooter {
+  margin-top: 100px;
+}
+
+footer li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+
+li a.lienfooter {  
+  text-decoration: none;
+  font: 12px Archivo;    
+ }
+
+/* COULEUR POUR LE LIEN ACTIF */
+li a.lienactif-footer{
+  font-weight: 600;   
+}
+
+footer a.lienfooter:hover{ 
+  color: #DCDCDC;  
+  }
+/*######################################################################################################## */
+
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: #420577;
+}
+
+
+/*################################################# FOOTER - MAUVE ####################################################### */
+/* FOOTER BANDE MAUVE AVEC LOGO ET LOGOS DES RÉSEAUX SOCIAUX */
+
+div.logostephanie-footer img{
+  max-width : 50%;
+  padding:10px 0 20px;  
+}
+
+.reseaux {  
+  padding:45px 0 20px;  
+}
+
+.footer-links{
+  padding-left:0;
+  list-style:none
+}
+
+.footer-links li {
+  display:block
+}
+
+.site-footer .social-icons{
+  text-align:right
+}
+
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons a{  
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;  
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#ea4c89;  
+}
+
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+@media (max-width:767px) {
+  .social-icons li.title {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+/*######################################################################################################## */
+
+
+
+
+/*################################################# PAGE - ACCEUIL ####################################################### */
+/* MAIN - PAGE ACCEUIL */
+
+main.index {
+  background-image: url(../images/back-index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+div.index-introduction {
+  font-family: Archivo;
+  text-transform: uppercase; 
+  float: left;  
+}
+
+div.index-introduction section{      
+  position: relative;
+  top: 50%;  
+}
+
+div.photo-profil{
+  float: right;  
+}
+
+div.photo-profil section {
+  position: relative;
+  top: 50%;  
+}
+
+
+h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  color: #707070;
+}
+
+h1.nom {
+  font-size: 75px;
+  font-weight: 600;
+  color: #420577;  
+  margin-top: -25px;
+}
+
+div.index-introduction hr {
+  border-style: none;
+  max-width: 50px;
+	border-width: 10px;   
+  height: 5px;
+  color: #420577;
+}
+
+button.bouton{
+  font-family: archivo;
+  color: #420577;
+  background-color: white;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #420577;
+  padding: 5px;    
+  }
+
+button.bouton:hover{
+  color: white;
+  background-color:#420577;        
+}
+/*######################################################################################################## */
+
+
+
+/*######################################################################################################## */
+/* BARRE DE NAVIGATION DES AUTRES PAGES AVEC TITRE DE PAGES */
+div.navbarmauve-pages{
+  background-color: #420577;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  font-family: Archivo;
+  text-transform: uppercase;
+  color: white;
+}
+
+div.titres-pages{
+  display: flex; 
+  justify-content: right;
+}
+
+div.titres-pages h2{
+  font-family: Archivo;  
+  text-transform: uppercase;
+  margin-top: 50px;
+  font-size: 3em;
+  text-align: center;
+  color: #707070;    
+}
+
+
+
+
+  /*######################################################################################################## */
+/* PAGE RÉALISATION-INFOGRAPHIE ET DEVELOPPEMENT WEB */
+
+
+
+
+
+
+/*######################################### PAGE CONTACT ############################################################### */
+/* PAGE FORMULAIRE DE CONTACT */
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #420577;
+  margin-bottom: 10px;
+}
+div.details a.areseau i:hover{  
+  color:#ea4c89;   
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #420577;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #420577;
+  cursor: pointer;  
+}
+.button input[type="button"]:hover{
+  color: #420577;
+  background-color: white;
+  font-size: 25px;
+  transition: 4s;
+}
+
+@media (max-width: 950px) {
+  .container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container .content{
+    flex-direction: column-reverse;
+  }
+ .container .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container .content .left-side::before{
+   display: none;
+ }
+ .container .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+/*######################################################################################################## */
+
+
+/*######################################### PAGE À PROPOS ############################################################### */
+/* PAGE À PROPOS */
+
+div {
+  font-family: Archivo; 
+  color: #707070;  
+}
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+p {
+  font-size: 20px;
+  font-weight: lighter;  
+}
+div.colone-gauche{
+  float: left;
+}
+div.colonne-droite{
+  float: right;
+}
+button.buttoncontact{
+color: white;
+background-color: #420577;
+text-transform: uppercase;
+border-radius: 8px;
+width: 250px;
+height: 50px;
+animation-name: bouton;
+}
+
+button.buttoncontact:hover{
+  color: #420577;
+  background-color: white;
+  font-size: 25px;
+  transition: 4s;
+  }
+
+  p.futur-projet {
+    font-family: Archivo;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    color: #707070;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
